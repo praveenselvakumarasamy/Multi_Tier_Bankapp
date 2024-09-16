@@ -1,0 +1,5 @@
+deployment: 
+  containers:
+    imagename: praveenselvakumarasamy/bankapp:old
+    
+    
