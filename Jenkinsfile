@@ -64,14 +64,13 @@ pipeline {
 
         stage('Update Deployment File') {
             steps {
-                git branch: 'main', credentialsId: 'git_cred', url: 'https://github.com/praveenselvakumarasamy/Multi_Tier_Bankapp.git'{
-                    sh '''git config user.email "praveenpup7@gmail.com" \
-                    git config user.name "praveenselvakumarasamy" \
-                    sed -i "s/replaceimagetag/latest/g" Multi_Tier_Bankapp/bankapp_charts/templates/values.yaml \
-                    git add Multi_Tier_Bankapp/bankapp_charts/templates/Deployment.yaml \
-                    git commit -m "bankapp commit 1" \
-                    git push -u origin main '''
-                }
+                sh '''git config user.email "praveenpup7@gmail.com" \
+                git config user.name "praveenselvakumarasamy" \
+                sed -i "s/replaceimagetag/latest/g" Multi_Tier_Bankapp/bankapp_charts/templates/values.yaml \
+                git add Multi_Tier_Bankapp/bankapp_charts/templates/Deployment.yaml \
+                git commit -m "bankapp commit 1" \
+                git remote add origin https://github.com/praveenselvakumarasamy/Multi_Tier_Bankapp.git \
+                git push -u origin main '''
             }
         }
     }
