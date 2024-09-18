@@ -15,7 +15,7 @@ pipeline {
         stage('Sonarqube Analysis') {
             steps {
                 withSonarQubeEnv('sonar_server') {
-                    sh '''mnv sonar:sonar -Dsonar.projectName=bankapp \
+                    sh '''mvn sonar:sonar -Dsonar.projectName=bankapp \
                     -Dsonar.projectKey=bankapp  -Dsonar.java.binaries=target'''
                 }
             }
