@@ -81,11 +81,11 @@
 		<distributionManagement>
         <repository>
             <id>maven-releases</id>
-            <url>http://localhost:8081/repository/maven-releases/</url>
+            <url>https://01d1-103-197-113-65.ngrok-free.app/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://localhost:8081/repository/maven-snapshots/</url>
+            <url>https://01d1-103-197-113-65.ngrok-free.app/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
   
