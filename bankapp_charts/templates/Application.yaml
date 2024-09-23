@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: javaapp-argo-application
+  name: bankapp-argo-application
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/praveenselvakumarasamy/javaapp_gitops.git
-    targetRevision: HEAD
-    path: test
+    repoURL: https://github.com/praveenselvakumarasamy/Multi_Tier_Bankapp.git
+    targetRevision: main
+    path: bankapp_charts/templates
   destination:
     server: https://kubernetes.default.svc
     namespace: myapp

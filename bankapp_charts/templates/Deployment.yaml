@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: javaapp-deployment
+  name: {{values.deployment.name}}
   labels:
-    app: javaapp
+    app: {{values.deployment.app}}
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: javaapp
+      app: {{values.deployment.app}}
   template:
     metadata:
       labels:
-        app: javaapp
+        app: {{values.deployment.app}}
     spec:
       containers:
       - name: javaapp-server
