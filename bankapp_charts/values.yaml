@@ -1,8 +1,10 @@
+name: bankapp
+
 deployment: 
   containers:
     imagename: praveenselvakumarasamy/bankapp:latest
 
-name: bankapp
+
 
 
 
