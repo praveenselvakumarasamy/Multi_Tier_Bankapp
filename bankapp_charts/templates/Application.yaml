@@ -12,7 +12,7 @@ spec:
     path: bankapp_charts/templates
   destination:
     server: https://kubernetes.default.svc
-    namespace: bankapp_ns
+    namespace: bankapp-ns
 
   syncPolicy:
     syncOptions:
