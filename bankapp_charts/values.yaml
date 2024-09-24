@@ -2,12 +2,12 @@ deployment:
   containers:
     imagename: praveenselvakumarasamy/bankapp:latest
 
-  name: bankapp-deployment
+  name: bankappdeployment
 
   app: bankapp
 
 service:
-  name: bankapp-service
+  name: bankappservice
 
   app: bankapp
     
