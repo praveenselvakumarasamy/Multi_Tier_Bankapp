@@ -15,7 +15,7 @@ spec:
         app: {{ .Values.name }}
     spec:
       containers:
-      - name: javaapp-server
+      - name: bankapp-server
         image: {{ .Values.deployment.containers.imagename }}
         ports:
         - containerPort: 8080
