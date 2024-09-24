@@ -2,13 +2,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: bankapp-argo-application
-  namespace: argocd
+  namespace: bankapp-ns
 spec:
   project: default
 
   source:
     repoURL: https://github.com/praveenselvakumarasamy/Multi_Tier_Bankapp.git
-    targetRevision: main
+    targetRevision: HEAD
     path: bankapp_charts/templates
   destination:
     server: https://kubernetes.default.svc
