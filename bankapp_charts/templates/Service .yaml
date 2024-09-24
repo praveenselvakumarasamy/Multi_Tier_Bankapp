@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{values.service.name}}
+  name: {{values.name}}
 spec:
   type: NodePort
   selector:
-    app.kubernetes.io/name: {{values.service.app}}
+    app.kubernetes.io/name: {{{values.name}}
   ports:
     - protocol: TCP
       port: 8082
