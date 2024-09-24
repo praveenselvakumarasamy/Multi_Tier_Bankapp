@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app.kubernetes.io/name: {{{values.name}}
+    app.kubernetes.io/name: {{values.name}}
   ports:
     - protocol: TCP
       port: 8082
